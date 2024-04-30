@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodip's Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!-- Calendar styling -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- Calendar functionality -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title">
+                <h1>Prodip's Blog</h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="column left-column">
+                <ul class="menu">
+                    <li><a href="#" class="toggle">Blogs</a>
+                        <ul>
+                            <li><a href="#">AI</a></li>
+                            <li><a href="#">ML</a></li>
+                            <li><a href="#">Robotics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column middle-column">
+                <div class="post">
+                    <h3>Category: AI</h3>
+                    <p>Sample blog post</p>
+                </div>
+                <div class="post">
+                    <h3>Category: ML</h3>
+                    <p>Sample blog post</p>
+                </div>
+                <div class="post">
+                    <h3>Category: Robotics</h3>
+                    <p>Sample blog post</p>
+                </div>
+            </div>
+            <div class="column right-column">
+                <h2>Find by Date</h2>
+                <div class="calendar-container">
+                    <input type="text" id="calendar" placeholder="Select Date">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        flatpickr("#calendar", {}); // Initialize the Flatpickr calendar
+
+        // JavaScript for toggleable submenu
+        document.querySelectorAll('.toggle').forEach(item => {
+            item.addEventListener('click', function() {
+                const subMenu = this.nextElementSibling;
+                subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+                this.parentNode.classList.toggle('active'); // Add 'active' class to parent li
+            });
+        });
+    </script>
+</body>
+</html>

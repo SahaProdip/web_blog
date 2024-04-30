@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 2in; /* 2 inch padding on both sides */
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #4b94cf; /* Dark blue background for header and footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Expanded padding for footer */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; /* Increased spacing between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    background: #e8eaf6; /* Light grey background for main content area */
+    padding: 20px;
+    min-height: 80vh;
+}
+
+footer {
+    font-size: 1.1em;
+    padding: 5px 0; /* More padding to expand footer */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Homepage navigation arrows */
+.nav-arrow {
+    font-size: 2em;
+    color: #0056b3; /* Dark blue color to match the theme */
+}
+
+/* About page styles */
+.profile-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.profile-left, .profile-right {
+    flex: 1; /* Each column takes up half of the container */
+    padding: 20px;
+}
+
+.profile-left {
+    border-right: 2px solid #ddd; /* Adds a subtle line between the columns */
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 200px; /* Limits photo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    font-size: 1.1em;
+}
+
+.education, .projects {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Index page styles */
+.main-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.column {
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1; /* Smaller columns */
+    border-right: 2px solid #ccc; /* Separator lines */
+}
+
+.middle-column {
+    flex: 3; /* Larger middle column */
+    border-right: 2px solid #ccc; /* Separator line */
+}
+
+/* Styling for the scrollable menu */
+.scroll-menu {
+    height: 300px;
+    overflow-y: auto; /* Makes the menu scrollable */
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sub-menu {
+    margin-left: 20px;
+    display: none; /* Initially hidden */
+}
+
+.sub-menu a {
+    display: block;
+    color: #c581c9;
+    text-decoration: none;
+}
+
+/* Calendar styles */
+.calendar-container {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Title styles */
+.title {
+    background: #c581c9; /* Dark blue background for the title */
+    color: #fff;
+    text-align: left; /* Align title text to the left */
+    padding: 20px; /* Padding for the title */
+    margin-bottom: 20px; /* Add space between title and content */
+}
